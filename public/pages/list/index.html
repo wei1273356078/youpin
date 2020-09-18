@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shorticut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/public.css" />
+  <link rel="stylesheet" href="/assets/fonts/iconfont1.css" />
+  <link rel="stylesheet" href="index.css">
+  <script>window.PointerEvent = undefined;</script>
+  <title>有品</title>
+</head>
+<body>
+  <i class="iconfont icon-top rocket"></i>
+  <div class="page-container">
+    <div class="page-header">
+      <div class="page-header-top">
+        <a href="/pages/category/index.html" class="back iconfont icon-back"></a>
+        <input type="text" class="search" />
+        <i class="show-mode iconfont icon-card"></i>
+      </div>
+      <div class="page-header-order">
+        <i class="order-dir iconfont icon-sort-asc"></i>
+        <span data-order-col="price" class="order-col active">价格</span>
+        <span data-order-col="sale" class="order-col">销量</span>
+        <span data-order-col="rate" class="order-col">评价</span>
+      </div>
+    </div>
+    <div class="hide-scroll scroll page-content">
+      <div class="scroll-content">
+        <ul class="product-list list"></ul>
+        <p class="info"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/assets/js/jQuery-3.4.0.js"></script>
+  <script src="/assets/js/jQuery-extend.js"></script>
+  <script src="/assets/js/iscroll-probe.js"></script>
+  <script src="/assets/js/imagesloaded.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

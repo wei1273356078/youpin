@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shorticut icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/fonts/iconfont1.css">
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/public.css" />
+  <link rel="stylesheet" href="/assets/css/regions_picker_m.css">
+  <link rel="stylesheet" href="index.css" />
+  <title>有品</title>
+</head>
+<body>
+  <!-- address-container -->
+  <div class="address-container show">
+    <!-- page-header -->
+    <div class="page-header">
+      <i class="iconfont icon-back prev-back"></i>
+      <span>收货地址</span>
+      <i></i>
+    </div>
+    <!-- empty -->
+    <div class="page-empty show">
+      <img src="/images/address/no_result_address.png" />
+      <p>你还没有收货地地址，请点击下方+新建</p>
+    </div>
+    <!-- page-content -->
+    <div class="page-content hide-scroll"></div>
+    <!-- page-footer -->
+    <div class="page-footer">
+      <button class="add-address">+ 添加地址</button>
+    </div>
+  </div>
+
+  <!-- edit-info -->
+  <div class="edit-address-info">
+    <!-- page-header -->
+    <div class="page-header">
+      <i class="iconfont icon-back address-back"></i>
+      <span>新增地址</span>
+      <i></i>
+    </div>
+    <!-- add-info -->
+    <div class="add-info">
+      <div class="receive-info">
+        <div>
+          <span>收货人姓名</span>
+          <input type="text" class="name" placeholder="请输入姓名" />
+        </div>
+        <div>
+          <span>手机号码</span>
+          <input type="text" class="phone" placeholder="请输入手机号码" />
+        </div>
+        <div>
+          <span>所在地区</span>
+          <input type="text" class="regions-picker region" placeholder="请选择所在地区" />
+        </div>
+        <div>
+          <span>街道地址</span>
+          <input type="text" class="detail" placeholder="请输入街道地址" />
+        </div>
+      </div>
+      <div class="default-info" data-default=''>
+        <i class="checkbox"></i>
+        <span class="default">设置默认地址</span>
+      </div>
+      <div class="delete">删除收货地址</div>
+      <button class="save" data-edit='add'>保存</button>
+    </div>
+  </div>
+
+  
+  <script src="/assets/js/js-cookie.js"></script>
+  <script src="/assets/js/jQuery-3.4.0.js"></script>
+  <script src="/assets/js/jQuery-extend.js"></script>
+  <script src="/assets/js/regions.js"></script>
+  <script src="/assets/js/regions_picker_m.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

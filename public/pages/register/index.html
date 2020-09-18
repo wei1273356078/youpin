@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shroticut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/public.css" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="/assets/Validform/Validform.css" />
+  <title>有品-登录</title>
+</head>
+<body>
+  <!-- login-container -->
+  <div class="login-container">
+    <!-- login-top -->
+    <div class="login-top">
+      <h2>注册小米账号</h2>
+    </div>
+    <!-- login-content -->
+    <div class="login-content">
+      <!-- login-user -->
+      <div class="login-user">
+        <form action="" name="login" class="login">
+          <label for="">
+            <input type="text" class="user" name="user" autocomplete="off" placeholder="用户名"
+              datatype='userName'
+              sucmsg=' '
+            />
+            <span class="Validform_checktip"></span>
+          </label>
+          <label for="">
+            <input type="text" class="phone" name="phone" autocomplete="off" placeholder="手机号" 
+              datatype='m'
+              nullmsg='不能为空'
+              errormsg='请输入正确的手机号'
+              sucmsg=' '
+            />
+            <span class="Validform_checktip"></span>
+          </label>
+          <label for="">
+            <input type="password" class="pwd" name="pwd" placeholder="密码" 
+              datatype='s3-20'
+              nullmsg='不能为空'
+              sucmsg=' '
+            />
+          </label>
+          <label for="">
+            <input type="button" class="btn-login" name="btn-login" value="立即注册" />
+          </label>
+          <label for="">
+            <input type="button" class="btn-toggle" name="btn-toggle" value="小米登录">
+          </label>
+        </form>
+      </div>
+    </div>
+    <!-- login-bottom -->
+    <div class="login-bottom">
+      <div class="other-login">
+        <p>其它方式登录</p>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+      <div class="other-font">
+        <span class="show">简体</span>
+        <b>|</b>
+        <span>繁体</span>
+        <b>|</b>
+        <span>English</span>
+        <b>|</b>
+        <span>常见问题</span>
+        <b>|</b>
+        <span>隐私政策</span>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/assets/js/jQuery-3.4.0.js"></script>
+  <script src="/assets/js/js-cookie.js"></script>
+  <script src="/assets/js/jQuery-extend.js"></script>
+  <script src="/assets/Validform/Validform_v5.3.2.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+
+/* pay-container */
+.pay-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(244, 244, 244);
+}
+
+/* pay-header */
+.pay-header {
+  height: 42px;
+  flex-shrink: 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay-header>i {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #666;
+}
+.pay-header>span {
+  flex-grow: 1;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+/* pay-content */
+.pay-content {
+  padding: 0 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pay-content>.price-time {
+  height: 90px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.pay-content>.price-time>span {
+  font-size: 16px;
+  color: #d71d1d;
+}
+.pay-content>.price-time>span.account {
+  font-size: 25px;
+}
+.pay-content>.price-time>p {
+  margin-top: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: #d71d1d;
+}
+/* pay-method */
+.pay-method {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.pay-method>div {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay-method>div>div {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay-method>div>div>img {
+  width: 33px;
+  height: 33px;
+}
+.pay-method>div>div>span {
+  font-size: 16px;
+  padding: 0 10px;
+}
+.pay-method>div>div>b {
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 6px;
+  color: #fff;
+  background: linear-gradient(to right, rgb(241, 83, 56), rgb(223, 20, 15));
+}
+.pay-method>div>i.checkbox {
+  width: 18px;
+  height: 18px;
+  background-image: url('/images/pay/icon_checkbox_uncheck_darkgray.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.pay-method>div>i.check {
+  background-image: url('/images/pay/icon_checkbox_check_brown.png');
+}
+
+/* pay-footer */
+.pay-footer {
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.pay-footer>button.btn-pay {
+  font-size: 18px;
+  font-weight: 600;
+  height: 42px;
+  width: 94vw;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 21px;
+  color: #fff;
+  background: linear-gradient(to right, rgb(241, 83, 56), rgb(223, 20, 15));
+}
+

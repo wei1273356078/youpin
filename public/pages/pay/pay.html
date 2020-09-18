@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shorticut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/fonts/iconfont1.css" />
+  <link rel="stylesheet" href="/assets/css/reset.css" />
+  <link rel="stylesheet" href="/assets/css/public.css" />
+  <link rel="stylesheet" href="pay.css" />
+  <title>有品</title>
+</head>
+<body>
+  <!-- pay-content -->
+  <div class="pay-container">
+    <!-- pay-header -->
+    <div class="pay-header">
+      <i class="iconfont icon-back prev-back"></i>
+      <span>有品收银台</span>
+      <i></i>
+    </div>
+    <!-- pay-content -->
+    <div class="pay-content">
+      <div class="price-time">
+        <span class="symbol">￥</span>
+        <span class="account"></span>
+        <span class="decimals">.00</span>
+        <p>支付剩余时间:<time class="valid-time"></time></p>
+      </div>
+      <div class="pay-method">
+        <div class="pay-alipay" data-pay="1">
+          <div>
+            <img src="/images/pay/pay_alipay.png" />
+            <span>支付宝</span>
+            <b>推荐</b>
+          </div>
+          <i class="checkbox check"></i>
+        </div>
+        <div class="pay-mipay" data-pay="0">
+          <div>
+            <img src="/images/pay/pay_mipay.png" />
+            <span>小米钱包</span>
+          </div>
+          <i class="checkbox"></i>
+        </div>
+      </div>
+    </div>
+    <!-- pay-footer -->
+    <div class="pay-footer">
+      <button class="btn-pay">确认支付￥<span></span></button>
+    </div>
+  </div>
+
+  <script src="/assets/js/jQuery-3.4.0.js"></script>
+  <script src="/assets/js/jQuery-extend.js"></script>
+  <script src="/assets/js/js-cookie.js"></script>
+  <script src="pay.js"></script>
+</body>
+</html>

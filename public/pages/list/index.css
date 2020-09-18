@@ -1,0 +1,204 @@
+.page-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #Eee;
+}
+/* 顶部 */
+.page-header {
+  flex-shrink: 0;
+}
+/* top */
+.page-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+.page-header-top>a.back {
+  font-size: 24px;
+}
+.page-header-top>input.search {
+  text-indent: 1em;
+  height: 32px;
+  width: 260px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.page-header-top>i.show-mode {
+  font-size: 20px;
+}
+/* order */
+.page-header-order {
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-header-order>i.order-dir {
+  font-size: 20px;
+  text-align: center;
+  width: 50px;
+  flex-grow: 0;
+  color: rgb(191, 17, 17);
+}
+.page-header-order>span {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 14px;
+  color: #333;
+}
+.page-header-order>span.active {
+  color: rgb(191, 17, 17);
+}
+/* 内容 */
+.page-content {
+  overflow: hidden;
+  flex-grow: 1;
+  touch-action: pan-y;
+}
+.page-content>.scroll-content>p.info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+}
+
+
+/* list渲染 */
+ul.product-list.list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+ul.product-list.list>li {
+}
+ul.product-list.list>li>a {
+  display: flex;
+  padding: 20px;
+  padding-right: 0px;
+  box-sizing: border-box;
+}
+ul.product-list.list>li>a>.img-wrapper {
+  flex-shrink: 0;
+  width: 126px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+ul.product-list.list>li>a>.img-wrapper>img {
+  width: 100%;
+}
+ul.product-list.list>li>a>.detail-wrapper {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+ul.product-list.list>li>a>.detail-wrapper>div {
+  width: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+ul.product-list.list>li>a>.detail-wrapper>div>h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+ul.product-list.list>li>a>.detail-wrapper>div>p.brief {
+  font-size: 13px;
+  color: #999;
+}
+ul.product-list.list>li>a>.detail-wrapper>div>p.price {
+  font-size: 12px;
+  color: rgb(191, 17, 17);
+}
+ul.product-list.list>li>a>.detail-wrapper>div>p.price>span.price {
+  font-size: 17px;
+}
+ul.product-list.list>li>a>.detail-wrapper>div>span.sale {
+  font-size: 12px;
+  color: #999;
+}
+ul.product-list.list>li>a>.detail-wrapper>div>span.rate {
+  font-size: 12px;
+  color: #999;
+}
+
+/* card渲染 */
+ul.product-list.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  box-sizing: border-box;
+}
+ul.product-list.card>li {
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+ul.product-list.card>li>a {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+ul.product-list.card>li>a>.img-wrapper {
+  width: 100%;
+}
+ul.product-list.card>li>a>.img-wrapper>img {
+  width: 100%;
+}
+ul.product-list.card>li>a>.detail-wrapper {}
+ul.product-list.card>li>a>.detail-wrapper>div {}
+ul.product-list.card>li>a>.detail-wrapper>div>h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+ul.product-list.card>li>a>.detail-wrapper>div>p.brief {
+  font-size: 13px;
+  color: #999;
+}
+ul.product-list.card>li>a>.detail-wrapper>div>p.price {
+  font-size: 12px;
+  color: rgb(191, 17, 17);
+}
+ul.product-list.card>li>a>.detail-wrapper>div>p.price>span.price {
+  font-size: 17px;
+}
+ul.product-list.card>li>a>.detail-wrapper>div>span.sale {
+  font-size: 12px;
+  color: #999;
+}
+ul.product-list.card>li>a>.detail-wrapper>div>span.rate {
+  font-size: 12px;
+  color: #999;
+}
+
+/* rocket 返回顶部 */
+i.rocket {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 20;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  background-color: #ccc;
+  color: #fff;
+}

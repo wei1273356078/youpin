@@ -1,0 +1,218 @@
+/* address-container */
+.address-container {
+  height: 100%;
+  display: none;
+  flex-direction: column;
+}
+.address-container.show {
+  display: flex;
+}
+/* page-header */
+.page-header {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(191, 191, 192);
+}
+.page-header>i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 24px;
+}
+.page-header>span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* empty */
+.page-empty.show {
+  display: flex;
+}
+.page-empty {
+  flex-grow: 1;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+}
+.page-empty>img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.page-empty>p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.page-content.show {
+  display: block;
+}
+/* page-content */
+.page-content {
+  display: none;
+  flex-grow: 1;
+  overflow: auto;
+}
+.page-content>.address-list {
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+.page-content>.address-list>img {
+  flex-shrink: 0;
+  margin-left: 10px;
+  width: 17px;
+  height: 17px;
+}
+.page-content>.address-list>.address-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 347px;
+}
+.page-content>.address-list>.address-info>div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+}
+.page-content>.address-list>.address-info>div>span.name {}
+.page-content>.address-list>.address-info>div>span.phone {}
+.page-content>.address-list>.address-info>p {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+}
+.page-content>.address-list>.address-info>p>span {
+  font-size: 12px;
+  padding: 2px 4px;
+  border: 1px solid rgb(182, 9, 9);
+  color: rgb(182, 9, 9);
+}
+
+
+
+/* page-footer */
+.page-footer {
+  height: 74px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-footer>button.add-address {
+  font-size: 14px;
+  height: 44px;
+  width: 384px;
+  outline: none;
+  border: 1px solid rgb(132, 95, 63);
+  border-radius: 5px;
+  color: rgb(132, 95, 63);
+  background-color: #fff;
+}
+
+
+/* add-address */
+.edit-address-info.show {
+  display: flex;
+}
+.edit-address-info {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+} 
+.edit-address-info>.page-header {
+  height: 45px;
+  flex-shrink: 0;
+}
+.edit-address-info>.add-info {
+  flex-grow: 1;
+  text-align: center;
+  background-color: rgb(246, 246, 246);
+}
+/* receive-info */
+.edit-address-info>.add-info>.receive-info {
+  display: flex;
+  flex-direction: column;
+}
+.edit-address-info>.add-info>.receive-info>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+.edit-address-info>.add-info>.receive-info>div>span {
+  font-size: 13px;
+  color: #333;
+}
+.edit-address-info>.add-info>.receive-info>div>input {
+  font-size: 14px;
+  width: 294px;
+  text-indent: 1em;
+  color: #333;
+}
+.edit-address-info>.add-info>.receive-info>div>input::placeholder {
+  color: #ccc;
+}
+/* default-info */
+.edit-address-info>.add-info>.default-info.show {
+  display: flex;
+}
+.edit-address-info>.add-info>.default-info {
+  display: none;
+  align-items: center;
+  margin-top: 7px;
+  height: 45px;
+  padding-left: 30px;
+  background-color: #fff;
+}
+.edit-address-info>.add-info>.default-info>i.checkbox {
+  width: 18px;
+  height: 18px;
+  background-image: url('/images/cart/icon_checkbox_uncheck_darkgray.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.edit-address-info>.add-info>.default-info>i.checkbox.check {
+  background-image: url('/images/cart/icon_checkbox_check_red.png');
+}
+.edit-address-info>.add-info>.default-info>span.default {
+  font-size: 13px;
+  padding-left: 5px;
+}
+.edit-address-info>.add-info>button.save {
+  margin-top: 20px;
+  width: 80px;
+  height: 36px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(131, 94, 63);
+}
+.edit-address-info>.add-info>.delete.show {
+  display: block;
+}
+.edit-address-info>.add-info>.delete {
+  display: none;
+  text-align: left;
+  margin-top: 7px;
+  height: 52px;
+  line-height: 52px;
+  padding-left: 30px;
+  font-size: 13px;
+  color: rgb(227, 13, 13);
+  background-color: #fff;
+}
